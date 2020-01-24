@@ -21,7 +21,7 @@ const (
 
 // 12 byte header, up to 4096 bytes of data, 2 bytes for null terminators.
 // this should be the absolute max size of a single response.
-const readBufferSize = 4110
+const readBufferSize = 65535
 
 type RemoteConsole struct {
 	conn      net.Conn
